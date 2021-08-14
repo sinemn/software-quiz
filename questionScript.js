@@ -1,6 +1,3 @@
-//TODO: Add scores table at the end
-//TODO: Add correct at top
-
 const quizData = [
   {
     question: "Inside which HTML element do we put the JavaScript?",
