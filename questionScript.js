@@ -4,7 +4,7 @@
 const quizData = [
   {
     question: "Inside which HTML element do we put the JavaScript?",
-    atext: "<js>",
+    a: "<js>",
     b: "<script>",
     c: "<javascript>",
     d: "<scripting>",
@@ -16,7 +16,7 @@ const quizData = [
     b: "Both the <head> section and the <body> section are correct",
     c: "The <body> section",
     d: "None of the above",
-    correct: "c",
+    correct: "b",
   },
   {
     question: `What is the correct syntax for referring to an external script called "xxx.js"?`,
@@ -43,6 +43,9 @@ const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitButton = document.getElementById("submit");
 
+let headerText = document.getElementById("headerText");
+let trueQuestion = 0;
+let falseQuestion = 0;
 let currentQuestion = 0;
 
 loadQuiz();
@@ -51,7 +54,7 @@ function loadQuiz() {
   const currentQuizData = quizData[currentQuestion];
   question_text.innerHTML = currentQuizData.question;
 
-  a_text.innerText = currentQuizData.atext;
+  a_text.innerText = currentQuizData.a;
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
@@ -62,6 +65,6 @@ submitButton.addEventListener("click", () => {
   if (currentQuestion < quizData.length) {
     loadQuiz();
   } else {
-    alert("Yeeey! You finished.");
+    headerText.innerText = "Yeeey! You finished. True: 2 Wrong: 2";
   }
 });
