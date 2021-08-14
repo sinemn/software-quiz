@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Software Quiz</title>
+  </head>
+  <body>
+    <h3>Test Yourself!</h3>
+    <div class="question-container">
+      <div class="question">
+        <h4 class="question-text" id="question">Question text here</h4>
+        <div id="answers" class="answers">
+          <ul>
+            <li>
+              <input id="a" type="radio" />
+              <label id="a_text" for="a">Answer A</label>
+            </li>
+            <li>
+              <input id="b" type="radio" />
+              <label id="b_text" for="b">Answer B</label>
+            </li>
+            <li>
+              <input id="c" type="radio" />
+              <label id="c_text" for="c">Answer C</label>
+            </li>
+            <li>
+              <input id="d" type="radio" />
+              <label id="d_text" for="d">Answer D</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+  </body>
+  <script src="questionScript.js"></script>
+</html>
