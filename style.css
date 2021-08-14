@@ -98,3 +98,16 @@ input[type="radio"]:checked:after {
   visibility: visible;
   border: 2px solid white;
 }
+.true {
+  color: green;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.false {
+  color: rgb(189, 15, 15);
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
